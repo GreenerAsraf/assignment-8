@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Activities from '../Activities/Activities';
+import Cart from '../Cart/Cart';
 import './Home.css';
 
 const Home = () => {
@@ -22,14 +24,17 @@ const Home = () => {
         <div>
           <h3 className="text-primary text-center ">Select Your Training</h3>
           <div className="exercise-container">
-            <div className='excercise-container'>
-                <h2>four part</h2>
+            <div className='excercise-items'>
+            {
+               products.map(product => <Activities product={product}
+                 handleAddToCart={handleAddToCart} 
+                 key ={product.id}></Activities>)
+           }
             </div>
             <div>
             <div className="cart-container">
-                <h3>This is cart</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, blanditiis. Ullam ea nulla ab incidunt delectus qui veniam, et repudiandae exercitationem, placeat omnis laudantium blanditiis. Expedita ullam repudiandae quidem adipisci!</p>
-              {/* <Cart cart ={cart}  ></Cart> */}
+               
+              <Cart cart ={cart}  ></Cart>
             </div>
             </div>
           </div>
