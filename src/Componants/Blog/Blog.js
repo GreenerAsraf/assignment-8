@@ -5,7 +5,7 @@ const Blog = () => {
         <div>
             <div class="text-center">
         <h1>Welcome to our Blog</h1>
-        <small>read it regularly and take advantage of tech knowledge</small>
+        <small>read it regularly and take advantage of tech knowledge!!!!!</small>
       </div>
         <hr/>
         <br/>
@@ -14,7 +14,7 @@ const Blog = () => {
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Question:how does react work ?
+                      Question:how does react work?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
