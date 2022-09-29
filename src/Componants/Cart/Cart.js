@@ -14,10 +14,25 @@ const Cart = (props) => {
         total = total + excercise.time;
     }
 
-    const breakTime =(sec)=>{
-        const breakTime = document.getElementsByClassName('break-time').innerText;
-        console.log('clicked',breakTime);
-        setTime(sec);
+    const breakTime1 =()=>{
+        const breakTimeValue = 10;
+        setTime(breakTimeValue);
+    }
+    const breakTime2 =()=>{
+        const breakTimeValue = 15;
+        setTime(breakTimeValue);
+    }
+    const breakTime3 =()=>{
+        const breakTimeValue = 20;
+        setTime(breakTimeValue);
+    }
+    const breakTime4 =()=>{
+        const breakTimeValue = 25;
+        setTime(breakTimeValue);
+    }
+    const breakTime5 =()=>{
+        const breakTimeValue = 30;
+        setTime(breakTimeValue);
     }
     // const {time} =props;
     return (
@@ -51,11 +66,11 @@ const Cart = (props) => {
             <hr />
             <div>
                 <h4>Add a Break</h4>
-                <button onClick={breakTime} className='btn btn-outline-info break-time'>{()=>setTime(10)}</button>
-                <button onClick={breakTime} className='btn btn-outline-info break-time'>15</button>
-                <button onClick={breakTime} className='btn btn-outline-info break-time'>20</button>
-                <button onClick={breakTime} className='btn btn-outline-info break-time'>25</button>
-                <button onClick={breakTime} className='btn btn-outline-info break-time'>30</button>
+                <button onClick={breakTime1} className='btn btn-outline-info break-time'>10</button>
+                <button onClick={breakTime2} className='btn btn-outline-info break-time'>15</button>
+                <button onClick={breakTime3} className='btn btn-outline-info break-time'>20</button>
+                <button onClick={breakTime4} className='btn btn-outline-info break-time'>25</button>
+                <button onClick={breakTime5} className='btn btn-outline-info break-time'>30</button>
             </div>
             <br />
             <h4>Exercise Details</h4>
