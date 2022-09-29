@@ -14,13 +14,13 @@ const Blog = () => {
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Question: What are the differences between local Storage and session storage?
+                      Question:how does react work ?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>
-                        sessionStorage is similar to localStorage . The one major difference between localStorage and sessionStorage is the expiration date.  that means while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab
+                     With the help of React virtual dom, React uses a declarative paradigm that makes it easier to reason about our application and aims to be both efficient and flexible. It designs simple views for each state in your application, and React will efficiently update and render just the right component when data changes.
                       </p>
                     </div>
                   </div>
@@ -28,53 +28,39 @@ const Blog = () => {
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Question: how does the js event loop work?
+                   what are the differences between Props and State?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks. The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task. The event loop allows us to use callbacks and promises
+                    Props are used to pass data from one component to another. The state is a local data storage that is local to the component only and cannot be passed to other components. The this.setState property is used to update the state values in the component
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Question:  What is difference between global scope and block scope?
+                      Question:  What are the uses of useEffect Hook except data loading from API?
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <p>
                         <p>
-                            Variables declared Globally (outside any function) have Global Scope.
-                            Global variables can be accessed from anywhere in a JavaScript program.
-                            Variables declared with var, let and const are quite similar when declared outside a block.
-                            They all have Global Scope. In a browser environment, the global scope is controlled by the window object while in Node. js, it's controlled by the global object. 
+                        The useEffect Hook allows you to perform side effects in your components.
+                        Some examples of side effects are: fetching data, directly updating the DOM, and timers.useEffect accepts two arguments. The second argument is optional.
+                            Other uses are ...........
+                        Running once on mount: fetch API data.
+                        Running on state change: validating input field.
+                        Running on state change: live filtering.
+                        Running on state change: trigger animation on new array value.
+                        Running on props change: update paragraph list on fetched API data update.
                         </p>
-                     
-                        
-                        Variables declared inside a { } block cannot be accessed from outside the block: Block scopes are what you get when you use if statements, for statements, and the like.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Question: how many ways we get undefined?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>
-                        undefined is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined.
-                        In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not the case, avoid overriding it.)
-                        A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.
-                    </p>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
         </section>
         </div>
