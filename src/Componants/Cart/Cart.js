@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
 import image from '../../1568834815228.jpg';
 
 const Cart = (props) => {
@@ -34,7 +35,9 @@ const Cart = (props) => {
         const breakTimeValue = 30;
         setTime(breakTimeValue);
     }
-    // const {time} =props;
+
+    // toastify here 
+    const notify = () => toast("Wow so easy!");
     return (
         <div>
          <div className="mx-auto">
@@ -82,8 +85,8 @@ const Cart = (props) => {
           <hr />
 
 
-          <button className='btn btn-success'>Activity Completed</button>
-         
+          <button onClick={notify} className='btn btn-success'>Activity Completed</button>
+          <ToastContainer />
         </div>
     );
 };
