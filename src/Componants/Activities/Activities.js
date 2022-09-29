@@ -2,20 +2,20 @@ import React from 'react';
 import'./Activities.css';
 const Activities = (props) => {
     const {handleAddToCart,product} = props;
-    const {img,name} = product;
+    const {img,name,time} = product;
     return (
     
     <div className='product'>
         <img src={img} alt="" />
         <div className="product-info">
         <p className='product-name'> {name}</p>
-        {/* <p> <small>Seller:{seller}</small></p> */}
-        {/* <p><small>Price: ${price}</small></p> */}
-        
-        </div>
-            <button onClick={()=>handleAddToCart(product)} className='btn-cart'>
+        <p>Time required: {time}s</p> 
+
+        <button onClick={()=>handleAddToCart(product)} className='btn btn-primary '>
                 <p>Add to Cart</p>
-            </button>
+        </button>
+        </div>
+        
     </div>
       
     );
