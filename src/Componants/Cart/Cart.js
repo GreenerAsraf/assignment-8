@@ -37,7 +37,7 @@ const Cart = (props) => {
     }
 
     // toastify here 
-    const notify = () => toast("Wow so easy!");
+    const notify = () => toast("You have completed your activity!!!! keep doing to stay healthy");
     return (
         <div>
          <div className="mx-auto">

@@ -12,7 +12,7 @@ const Activities = (props) => {
         <p>Time required: {time}s</p> 
 
         <button onClick={()=>handleAddToCart(product)} className='btn btn-primary '>
-                <p>Add to Cart</p>
+                <p>Add to Exercise list</p>
         </button>
         </div>
         

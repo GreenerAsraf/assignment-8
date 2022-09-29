@@ -18,7 +18,6 @@ const Home = () => {
     const handleAddToCart = (products) =>{
         console.log(products);
         const newCart =[...cart , products];
-        // const time = cart.time+ previousTime;
         setCart(newCart)
     }
     return (
